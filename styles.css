@@ -1,0 +1,46 @@
+#popup {
+  background: pink;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.slide-up {
+  display: block;
+  bottom: 50%;
+  left: 50%;
+  animation: slide-up;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes slide-up {
+  from {
+    bottom: -50px;
+  }
+
+  to {
+    bottom: 50%;
+  }
+}
+
+.slide-down {
+  display: block;
+  bottom: -50%;
+  left: 50%;
+  animation: slide-down;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes slide-down {
+  from {
+    bottom: 50%;
+  }
+
+  to {
+    bottom: -50%;
+  }
+}
