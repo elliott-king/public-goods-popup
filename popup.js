@@ -15,4 +15,8 @@ document.addEventListener('click', (event) => {
     const elem = document.getElementById('popup')
     elem.className = "slide-down"
   }
+  if (event.target.id == "x") {
+    const elem = document.getElementById('popup')
+    elem.className = "hidden"
+  }
 })
